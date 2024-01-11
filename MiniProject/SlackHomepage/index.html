@@ -5,15 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slack is your productivity platform | Slack</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./src/style.css">
     <link rel="icon" type="image/x-icon" href="./Assets/favicon-32.png">
 </head>
 
 <body>
-    <nav class="bg-[#541554] text-white">
-        <div class="navigation-wrapper">
-            <div class="navigation-left">
-                <div class="icon">
+
+    <!-- Nav Section -->
+
+    <nav class="bg-[#541554] text-white w-full">
+        <div class="navigation-wrapper flex max-w-screen-xl mx-auto py-7 h-20 items-center justify-between">
+            <div class="navigation-left flex">
+                <div class="icon w-32">
                     <a data-clog-click="" data-clog-ui-element="link_home" data-clog-ui-component="inc_header_nav_deux"
                         class="c-slacklogo--white" href="https://slack.com/intl/en-in/" aria-label="Slack"
                         data-qa="logo"><svg height="25" width="100" class="c-slacklogo--white" viewBox="0 0 240 60"
@@ -39,72 +49,75 @@
                         </svg>
                     </a>
                 </div>
-                <div class="list">
-                    <ul>
-                        <li>
+                <div class="list px-2">
+                    <ul class="flex w-full gap-x-4 font-medium">
+                        <li class="flex gap-x-1">
                             <a href="#">Features</a>
                             <img src="https://a.slack-edge.com/3099b/marketing/img/icons/icon_chevron_white_nav.svg"
                                 alt="dropdown">
                         </li>
-                        <li>
-                            <a href="#">Features</a>
+                        <li class="flex gap-x-1">
+                            <a href="#">Solutions</a>
                             <img src="https://a.slack-edge.com/3099b/marketing/img/icons/icon_chevron_white_nav.svg"
                                 alt="dropdown">
                         </li>
                         <li>
-                            <a href="#">Features</a>F
+                            <a href="#">Enterprise</a>
+                        </li>
+                        <li class="flex gap-x-1">
+                            <a href="#">Resources</a>
                             <img src="https://a.slack-edge.com/3099b/marketing/img/icons/icon_chevron_white_nav.svg"
                                 alt="dropdown">
                         </li>
-                        <li>
-                            <a href="#">Features</a>
-                            <img src="https://a.slack-edge.com/3099b/marketing/img/icons/icon_chevron_white_nav.svg"
-                                alt="dropdown">
+                        <li class="flex gap-x-1">
+                            <a href="#">Pricing</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="navigation-right">
-                <div class="search-icon">
+            <div class="navigation-right flex gap-x-8 items-center justify-center font-medium">
+                <div class="search-icon flex gap-6 items-center justify-center">
                     <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="m18.78 17.72c.1467.1467.22.3233.22.53 0 .2133-.0733.39-.22.53-.16.1467-.3367.22-.53.22-.2067 0-.3833-.0733-.53-.22l-4.47-4.47c-.6667.54-1.4067.9567-2.22 1.25-.8067.2933-1.65.44-2.53.44-1.36 0-2.61333-.3367-3.76-1.01s-2.05667-1.5833-2.73-2.73-1.01-2.4-1.01-3.76.33667-2.61333 1.01-3.76 1.58333-2.05667 2.73-2.73 2.4-1.01 3.76-1.01 2.6133.33667 3.76 1.01 2.0567 1.58333 2.73 2.73 1.01 2.4 1.01 3.76c0 .88-.1467 1.7267-.44 2.54-.2933.8067-.71 1.5433-1.25 2.21zm-10.28-3.22c1.08667 0 2.0867-.27 3-.81.92-.54 1.65-1.2667 2.19-2.18.54-.92.81-1.92333.81-3.01s-.27-2.08667-.81-3c-.54-.92-1.27-1.65-2.19-2.19-.9133-.54-1.91333-.81-3-.81s-2.09.27-3.01.81c-.91333.54-1.64 1.27-2.18 2.19-.54.91333-.81 1.91333-.81 3s.27 2.09.81 3.01c.54.9133 1.26667 1.64 2.18 2.18.92.54 1.92333.81 3.01.81z"
-                            stroke="#000" stroke-width=".5"></path>
+                            stroke="#ffff" stroke-width=".5" fill="#ffffff"></path>
                     </svg>
                     <p>
                         Sign in
                     </p>
                 </div>
-                <div class="">
-                    <button>
+                <div class="flex gap-x-4">
+                    <button
+                        class="px-3 py-2 rounded-md border-[1px] border-white hover:border-2 hover:px-[11px] hover:shadow-md">
                         TALK TO SALES
                     </button>
-                    <button>
+                    <button
+                        class="px-3 py-2 rounded-md bg-white text-[#541554] border-[2px] border-white hover:border-[#541554] transition-all duration-500 hover:shadow-md">
                         TRY FOR FREE
                     </button>
                 </div>
             </div>
         </div>
 
-        <div class="hero-section">
+        <div class="hero-section flex max-w-screen-xl mx-auto mt-8 pb-20 items-center justify-between font-Roboto ">
             <div class="left">
-                <h1>
+                <h1 class="text-6xl font-bold leading-[71px] ">
                     Made for people.
                 </h1>
-                <h1>
+                <h1 class="text-6xl font-bold leading-[71px] text-[#ecb22e]">
                     Build for productivity.
                 </h1>
-                <p>
+                <p class="text-[18px] font-medium mt-3 max-w-xl">
                     Connect the right people, find anything that you need and automate the rest. That’s work in Slack,
-                    your
-                    productivity platform.
+                    yourproductivity platform.
                 </p>
-                <div class="Signup-button">
-                    <button>
+                <div class="Signup-button flex gap-2 text-sm font-bold mt-10 mb-6">
+                    <button class="px-10 py-5 bg-white text-[#541554] shadow-md rounded-sm tracking-wide my-1">
                         SIGN UP WITH EMAIL ADDRESS
                     </button>
-                    <button>
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="LgbsSe-Bz112c">
+                    <button class="flex bg-[#4285f4] items-center rounded-sm tracking-wide m-1">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                            class="LgbsSe-Bz112c w-[49px] p-[14px] bg-white m-1 rounded-sm">
                             <g>
                                 <path fill="#EA4335"
                                     d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z">
@@ -121,20 +134,100 @@
                                 <path fill="none" d="M0 0h48v48H0z"></path>
                             </g>
                         </svg>
-                        <p>
+                        <p class="pr-4 pl-3">
                             SIGN UP WITH GOOGLE
                         </p>
                     </button>
                 </div>
-                <p>Slack is free to try for as long as you like</p>
+                <p class="leading-4 text-lg font-bold">Slack is free to try for as long as you like</p>
             </div>
-            <div class="right">
-                <video controls poster="./Assets/ia4-hero-product-ui.IN.jpg">
+            <div class="right w-1/2">
+                <video autoplay muted poster="./Assets/ia4-hero-product-ui.IN.jpg" class="max-w-[700px]">
                     <source src="./Assets/ia4-hero-product-ui.IN.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
     </nav>
+
+    <!-- Company logo section -->
+
+    <div class="company bg-[#f4ede4] flex flex-col w-full items-center justify-center pt-8">
+        <p class="font-bold text-sm tracking-wide">TRUSTED BY COMPANIES ALL OVER THE WORLD</p>
+        <div class="logos flex gap-8 py-8 max-w-[780px]" class="h-9">
+            <img src="./Assets/logo-seek.png" alt="seek" class="h-9">
+            <img src="./Assets/logo-xero.png" alt="xero" class="h-9">
+            <img src="./Assets/rea.png" alt="rea" class="h-9">
+            <img src="./Assets/rmit.png" alt="rmit" class="h-9">
+            <img src="./Assets/logo-ibm.png" alt="logo-ibm" class="h-9">
+            <img src="./Assets/deliveroo.png" alt="deliveroo" class="h-9">
+        </div>
+    </div>
+
+
+    <!-- Features Section -->
+
+    <section class="bg-[#f4ede4] w-full font-Roboto">
+        <div class="first max-w-screen-xl mx-auto flex justify-between items-center pb-12 pt-7">
+            <div>
+                <video autoplay muted src="./Assets/speed.IN.mp4" class="max-h-[400px] py-4"></video>
+            </div>
+            <div class="max-w-lg flex flex-col gap-y-5">
+                <h1 class="font-bold text-5xl">
+                    Move faster with your tools in one place
+                </h1>
+                <p class="font-normal text-lg">
+                    Automate away routine tasks with the power of generative AI and simplify your workflow with all your
+                    favourite apps ready to go in Slack.
+                </p>
+                <a href="#"
+                    class="leading-6 w-fit text-[#1264a3] text-lg border-b-2 border-[#f4ede4] hover:border-b-2 hover:border-[#1264a3] box-border">Learn
+                    more about the Slack platform <span>&rarr;</span> </a>
+            </div>
+        </div>
+        <div class="first max-w-screen-xl mx-auto flex justify-between items-center py-12">
+            <div class="max-w-lg flex flex-col gap-y-5">
+                <h1 class="font-bold text-5xl">
+                    Choose how you want to work
+                </h1>
+                <p class="font-normal text-lg">
+                    In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. You can
+                    easily chat, send audio and video clips, or join a huddle to talk things through live.
+                </p>
+                <a href="#"
+                    class="leading-6 w-fit text-[#1264a3] text-lg border-b-2 border-[#f4ede4] hover:border-b-2 hover:border-[#1264a3] box-border">Learn
+                    more about flexible communication <span>&rarr;</span> </a>
+            </div>
+            <div class="border-none">
+                <video autoplay muted
+                    src="https://a.slack-edge.com/ec3a92a/marketing/img/homepage/true-prospects/animations/webm/ia4-flexibility.IN.webm"
+                    class="max-h-[400px] py-4"></video>
+            </div>
+        </div>
+        <div class="first max-w-screen-xl mx-auto flex justify-between items-center pb-12 pt-7">
+            <div>
+                <video autoplay muted src="./Assets/connectedness.IN.mp4" class="max-h-[400px] py-4"></video>
+            </div>
+            <div class="max-w-lg flex flex-col gap-y-5">
+                <h1 class="font-bold text-5xl">
+                    Bring your team together
+                </h1>
+                <p class="font-normal text-lg">
+                    At the heart of Slack are channels: organised spaces for everyone and everything that you need for
+                    work. In channels, it’s easier to connect across departments, offices, time zones and even other
+                    companies.
+                </p>
+                <a href="#"
+                    class="leading-6 w-fit text-[#1264a3] text-lg border-b-2 border-[#f4ede4] hover:border-b-2 hover:border-[#1264a3] box-border">Learn
+                    more about channels <span>&rarr;</span> </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slack Section -->
+    
+    <Section>
+
+    </Section>
 </body>
 
 </html>
