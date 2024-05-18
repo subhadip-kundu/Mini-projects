@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Strategy Consultancy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Shilpa...</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Unlock Your Business's Potential</h1>
+            <p>Transform your business with strategic insights and expert guidance.</p>
+            <a href="#services" class="btn">Get Started</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>We are a team of experienced consultants dedicated to helping businesses thrive in today's
+                        competitive landscape. Our expertise spans strategic planning, market analysis, and operational
+                        optimization.</p>
+                </div>
+                <div class="about-images">
+                    <img src="https://via.placeholder.com/300x200" alt="Consultant 1">
+                    <img src="https://via.placeholder.com/300x200" alt="Consultant 2">
+                    <img src="https://via.placeholder.com/300x200" alt="Consultant 3">
+                    <img src="https://via.placeholder.com/300x200" alt="Consultant 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="con-h2">Our Services</h2>
+            <div class="wrapper">
+                <div class="con-flex">
+                    <div class="service-item">
+                        <h3>Strategic Planning</h3>
+                        <p>We develop tailored strategic plans to align your business goals with market opportunities
+                            and drive growth.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Market Analysis</h3>
+                        <p>Gain valuable insights into market trends, customer behavior, and competitive landscape to
+                            make informed decisions.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Operational Optimization</h3>
+                        <p>Streamline your processes, enhance efficiency, and reduce costs through our proven
+                            optimization strategies.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-wrapper">
+            <div class="contact-content form-map">
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                    <p>Ready to take your business to the next level? Reach out to us today!</p>
+                    <form id="contactForm" action="#" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn">Send</button>
+                    </form>
+                </div>
+                <div class="map ">
+                    <!-- Insert your map embed code here -->
+                    <!-- Example: -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12117.739116115407!2d-122.42052401435447!3d37.77557417817341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e1c287a1d07%3A0x5c9b066c285d2d4f!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1632922675653!5m2!1sen!2sus"
+                         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the contact form element
+            var form = document.getElementById("contactForm");
+
+            // Add submit event listener to the form
+            form.addEventListener("submit", function (event) {
+                // Prevent the default form submission
+                event.preventDefault();
+
+                // Show an alert when the form is submitted
+                alert("Form submitted successfully!");
+            });
+        });
+    </script>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Business Strategy Consultancy. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
